@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import router from './router'
+import router from './router/route'
 import './plugins/element.js'
 
 // 导入全局样式表
@@ -11,6 +11,11 @@ import './assets/fonts/iconfont.css'
 import axios from 'axios'
 // 配置请求的根路径
 axios.defaults.baseURL = 'http://127.0.0.1:8888/api/private/v1/'
+// 请求在到达服务器之前，先调用use中的这个回调函数来添加请求头信息
+axios.interceptors.request.use(config => {
+  config.headers.Authorization = window.sessionStorage.getItem('token')
+  return config
+})
 Vue.prototype.$http = axios
 
 Vue.config.productionTip = false
