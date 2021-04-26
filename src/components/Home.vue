@@ -3,7 +3,7 @@
     <!-- 标题 -->
     <el-header>
       <div>
-        <img src="../assets/heima.png" alt="" />
+        <img src="../assets/touxiang.jpg" class="logo" alt="" />
         <span>后台管理系统</span>
       </div>
       <el-button type="info" @click="logout">退出</el-button>
@@ -152,5 +152,10 @@ export default {
   letter-spacing: 0.2em;
   // 鼠标放上去变成小手
   cursor: pointer;
+}
+.logo{
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
 }
 </style>
