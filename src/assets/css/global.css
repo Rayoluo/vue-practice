@@ -29,3 +29,7 @@ body,
 div .el-scrollbar {
     height: 300px;
 }
+
+.ql-editor{
+    min-height: 300px;
+}
