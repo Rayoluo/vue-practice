@@ -44,7 +44,7 @@ npm run lint
 
   http://123.56.4.252:8989/
 
-  ### 后端接口
+  ### 后端代码（nodejs）
 
   https://gitee.com/wBekvam/vueShop-api-server
 
